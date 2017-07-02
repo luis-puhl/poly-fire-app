@@ -14,9 +14,12 @@
         provider="google">
     </firebase-auth>
   </template>
+  
   <script>
     Polymer({
-      is: 'note-app'
+        is: 'note-app',
+
+        behaviors: [Polymer.NoteAppBehavior]
     });
-  </script>
+    </script>
 </dom-module>
