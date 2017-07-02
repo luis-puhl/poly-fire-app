@@ -1,0 +1,22 @@
+    1  firebase login
+    2* elinks
+    3  firebase login --help
+    4  firebase login --no-localhost
+    5  firebase init
+    6  git status
+    7  git add *
+    8  git status
+    9  git add .firebaserc
+   10  git commit -m "firebase init"
+   11  git commit -a -m "Remove firebase rewrite rules"
+   12  cd public
+   13  bower install -p polymerlabs/note-app-elements firebase/polymerfire
+   14  bower install -p polymerlabs/note-app-elements firebase/polymerfire --allow-root
+   15  cd ..
+   16  \t touch public/manifest.json
+   17  touch public/sw-import.js
+   18  touch public/note-app.html
+   19  firebase server
+   20  firebase serve
+   21* http-server
+   22* exit
