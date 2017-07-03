@@ -38,6 +38,20 @@
         data="{{editableNote}}">
     </firebase-document>
 
+	<firebase-query
+	    id="query"
+	    app-name="notes"
+	    path="/notes/[[user.uid]]"
+	    data="{{notes}}">
+	</firebase-query>
+
+	<app-indexeddb-mirror
+	    session="[[user.uid]]"
+	    key="notes"
+	    data="{{notes}}"
+	    persisted-data="{{persistedNotes}}">
+	</app-indexeddb-mirror>
+
     <paper-fab
         icon="add"
         on-tap="create"
