@@ -31,6 +31,13 @@
         on-close="commitChange">
     </na-editor>
 
+    <firebase-document
+        id="document"
+        app-name="notes"
+        path="[[editableNoteId]]"
+        data="{{editableNote}}">
+    </firebase-document>
+
     <paper-fab
         icon="add"
         on-tap="create"
@@ -46,8 +53,16 @@
         behaviors: [Polymer.NoteAppBehavior],
 
         signIn: function() {
-           this.$.auth.signInWithPopup();
+          this.$.auth.signInWithPopup();
+        },
+
+        get notesPath() {
+            return '/notes/' + this.user.uid;
+        },
+
+        toEditableId: function(noteId) {
+            return this.notesPath + '/' + noteId;
         }
     });
-    </script>
+  </script>
 </dom-module>
