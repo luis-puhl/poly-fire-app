@@ -1,22 +1,40 @@
-    1  firebase login
-    2* elinks
-    3  firebase login --help
-    4  firebase login --no-localhost
-    5  firebase init
-    6  git status
-    7  git add *
-    8  git status
-    9  git add .firebaserc
-   10  git commit -m "firebase init"
-   11  git commit -a -m "Remove firebase rewrite rules"
-   12  cd public
-   13  bower install -p polymerlabs/note-app-elements firebase/polymerfire
-   14  bower install -p polymerlabs/note-app-elements firebase/polymerfire --allow-root
-   15  cd ..
-   16  \t touch public/manifest.json
-   17  touch public/sw-import.js
-   18  touch public/note-app.html
-   19  firebase server
-   20  firebase serve
-   21* http-server
-   22* exit
+    1  ls
+    2  bower install
+    3  bower install --allow-sudo
+    4  bower install --allow-root
+    5  http-server
+    6* bower install --save web-animations-js
+    7* bower install --save web-animations-js --allow-root
+    8* cd public
+    9* ls
+   10* bower init
+   11* bower init --allow-root
+   12* gst
+   13* git config core.fileMode false
+   14* gst
+   15* bower install --save web-animations-js --allow-root
+   16* bower install --save webcomponents platinum-sw --allow-root
+   17* bower install --save webcomponentsjs platinum-sw --allow-root
+   18* bower install --allow-root
+   19* bower install --allow-root --save polymerfire
+   20* bower install --allow-root --save platinum-sw app-storage app-pouchdb polymerfire paper-styles iron-icons iron-icon font-roboto iron-flex-layout paper-button paper-fab paper-icon-button web-animations-js
+   21* bower install --allow-root --save note-app-elements
+   22* bower install --allow-root --save
+   23* bower install --allow-root 
+   24* rm -rf bower_components
+   25* bower init
+   26* bower init --allow-root
+   27* bower install --allow-root --save platinum-sw app-storage app-pouchdb polymerfire paper-styles iron-icons iron-icon font-roboto iron-flex-layout paper-button paper-fab paper-icon-button web-animations-js PolymerLabs/note-app-elements
+   28* ls
+   29* l
+   30* bower install --allow-root 
+   31* firebase login:ci
+   32* firebase login:ci --help
+   33* firebase login:ci --no-localhost
+   34* firebase deploy
+   35* firebase deploy --"4/9bEhStPeZcSfaE1cPRlkTDgupN-XbvAgfcZDEj4MwUc"
+   36* firebase deploy --token "4/9bEhStPeZcSfaE1cPRlkTDgupN-XbvAgfcZDEj4MwUc"
+   37* firebase login --reauth
+   38* firebase login --reauth --no-localhost
+   39* firebase deploy
+   40* exit
