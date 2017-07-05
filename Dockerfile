@@ -51,6 +51,8 @@ EXPOSE 4200
 # firebase login and serve
 EXPOSE 9005 5000
 
+COPY dist /app
+
 VOLUME [ "/app" ]
 WORKDIR "/app"
 
